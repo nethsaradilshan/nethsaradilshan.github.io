@@ -353,8 +353,8 @@ window.addEventListener('scroll', function() {
 function changeAboutBG(){
 	let value = window.scrollY;
     section.style.clipPath = `circle(${value}px at center center)`;
-    text.style.left = 150 - value / 5 + `%`;
-    innerText.style.left = 150 - value / 5 + `%`;
+    text.style.left = 100 - value / 5 + `%`;
+    innerText.style.left = 100 - value / 5 + `%`;
 
 	if (parseFloat(text.style.left) < -90 ){
 		$('#section-vertical-line').addClass("about-us-bg");
