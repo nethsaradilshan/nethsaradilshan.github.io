@@ -9,7 +9,7 @@
 	   $(".preloader").fadeOut(600);
 	   $('#folio-bg').hide();
 	   changeAboutBG();
-	   chnageLogoSliderBG();
+	   //chnageLogoSliderBG();
 	   sideSocialMedia();  
     });
 	
@@ -345,7 +345,7 @@ window.addEventListener('scroll', function() {
 	$('#folio-bg').hide();
 	changeAboutBG();  
 	viewFortpolioTitle();
-	chnageLogoSliderBG();
+	//chnageLogoSliderBG();
 	sideSocialMedia();
 	skillsLoader();
 })
@@ -380,15 +380,15 @@ function viewFortpolioTitle(){
 	if(($('.horizontal').isInViewport()) || ($('.thisISPortfolio').isInViewport()))
 	$('#folio-bg').show();	
 }
-function chnageLogoSliderBG(){	
-	if($('#contact').isInViewport()){
-		$('.brand-sponser').removeClass("darkbackground");
-		$('.brand-sponser').addClass("lightbackground");
-	}else{
-		$('.brand-sponser').removeClass("lightbackground");
-		$('.brand-sponser').addClass("darkbackground");
-	}	
-}
+// function chnageLogoSliderBG(){	
+// 	if($('#contact').isInViewport()){
+// 		$('.brand-sponser').removeClass("darkbackground");
+// 		$('.brand-sponser').addClass("lightbackground");
+// 	}else{
+// 		$('.brand-sponser').removeClass("lightbackground");
+// 		$('.brand-sponser').addClass("darkbackground");
+// 	}	
+// }
 
 //side social media 
 function sideSocialMedia(){	
