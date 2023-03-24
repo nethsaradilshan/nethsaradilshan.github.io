@@ -1,8 +1,12 @@
 /*
 	Author 			: Nethsara Dilshan
 */
-  
-  #stars {
+
+/*****************************/
+/* main banner space effect  */
+/*****************************/
+
+#stars {
     width: 1px;
     height: 1px;
     background: transparent;
@@ -84,8 +88,9 @@
   }
 
 
-
-  /* top banner animation wow */
+/*****************************/
+/* top banner animation wow */
+/****************************/
 #section-vertical-line {
   display: flex;
   justify-content: center;
@@ -157,26 +162,10 @@
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  .innerText-vertical-line, .text, .text-vertiical-line {
-      font-size: 5.5em;
-  }
-  
-  .main-banner-white p {
-      font-size: 1.5em;
-      font-weight: 500;
-      letter-spacing: 1.5px;
-      width: 100%;
-  }
-
-  .main-banner-white h2 {
-      font-size: 2em;
-      margin-bottom: 50px;
-  }
-}
-
+/*****************************/
 /* banner top down see more  */
-  .banner-about-down {
+/*****************************/
+.banner-about-down {
     font-family: "Quicksand", Arial, sans-serif;
     color: #ffffff;
     text-transform: uppercase;
@@ -227,32 +216,6 @@
     bottom: 0;
 }
 
-@media only screen and (max-width: 767px){
-  /* main section */
-  .banner-about-down {
-      display: none;
-  }
-}
-@media only screen and (max-width: 991px){
-  /* main section */
-  .behind-titles{
-    font-size: 6em;
-  }
-}
-@media only screen and (max-width: 575px){
-  /* main section */
-  .behind-titles{
-    font-size: 3em;
-  }
-  .about-us{
-    margin-top: 75vh;
-  }
-}@media only screen and (max-width: 375px){
-  .about-us{
-    margin-top: 75vh;
-  }
-}
-
 
 .logofont{
     font-family: 'Major Mono Display', monospace !important;
@@ -272,42 +235,6 @@
 
 
 /* about section bold title start */
-.about-section h2 {
-  font-weight: 300;
-  letter-spacing: 1px; }
-  .about-section{
-    top:100vh;
-  }
-
-@media (max-width: 767.98px) {
-  .about-section .author-img {
-    display: block;
-    height: 300px; } 
-  }
-
-.wrap {
-  padding: 0; }
-  @media (max-width: 767.98px) {
-    .wrap {
-      margin-top: 40px; } }
-  @media (min-width: 768px) {
-
-    #folio-bg{
-      position: fixed !important;
-      top: 20vh;
-      max-width: 100%;
-      text-align: center;
-    }
-    .horizontal{
-      top: 30vh;
-    }
-    .websie-titles{
-      margin-top: 30%;
-      margin-bottom: 20px;
-    }
-
-    .wrap .about-desc {
-      position: relative; } }
   .wrap .about-desc .bold-text {
     position: absolute;
     top: -60px;
@@ -318,278 +245,13 @@
     color: rgba(255, 255, 255, 0.05);
     /* text-transform: uppercase;  */
   }
-    @media (min-width: 992px) {
-      .wrap .about-desc .bold-text {
-        font-size: 6.5em; } }
-    @media (max-width: 991.98px) {
-      .portfolio-h-section{
-        display: none;
-      }
-      .mobile-fortpolio{
-        display: block;
-      }
-      .behind-titles-p{
-        padding: 0 !important;
-      }
-      .wrap .about-desc .bold-text {
-        display: none; } }
-    @media (max-width: 767.98px) {
-      .wrap .about-desc .bold-text {
-        display: none; } }
+    
 
-        /* about section svg*/
-.svg-rocket {
-  width: 80%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.svg-rocket .cls-1 {
-stroke-width: 2px;
-stroke: #cdcdcd;
-fill: transparent;
-stroke-dasharray: 7000;
-stroke-dashoffset: 7000;
-animation: animate 5s linear infinite;
- }
-
-@keyframes animate {
-     to {
-            stroke-dashoffset: 0;
-        }       
-    }
-
+       
 
 /* about section bold title end */
 
-/* scrolling line start */
-    /* .linecolor {
-      stroke: #525252;
-    }
-    svg {
-      height: 4000px;
-      width:10vw;
-      z-index: 9;
-    }
-    
-    path {
-      transition: stroke-dashoffset 1000ms ease;
-    }
-    
-    .vertical{
-      display:flex;
-      flex-direction: column;
-      position: absolute;
-    } */
-    /* scrolling line end */
 
-    /* portfolio section start */
-
-    .portfolio-h-section{
-      background-color: #111111;
-      position: relative;
-    }
-    .portfolio-h-section-bg{
-      background-color: #2c2c2c !important; 
-	transition: background-color 0.5s ease-in-out; 
-    }
-
-    .behind-titles-p h2{
-  font-weight:300 !important;
-  letter-spacing: 1px;
-
-}
-
-
-.testimonial-header a{
-  padding: 10px 20px;
-  border: #cdcdcd solid 1px;
-  color: #cdcdcd;
-}
-.testimonial-header h6:hover,.testimonial-header h6:active,.testimonial-header h6:focus {
-  color: #fff;
-  background-color: #111111;
-  position: relative;
-}
-  
-   ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .sticky-parent{
-    height: 500vh;
-  }
-  .sticky{
-    position: sticky;
-    top: 0px;
-    max-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  .dim{
-    display: block;
-    min-width: 100vw;
-    height: 100vh;
-    padding-top: 30vh;
-  }
-  .horizontal{
-    display: flex;
-  }
- .horizontal a{
-  color: #cdcdcd;
-  padding: 10px 30px;
-  border: #cdcdcd solid 1px;
- }
- .horizontal a:hover{
-  color: #111;
-  background-color: #ddd;
- }
-  
-  @media (max-width: 620px) {
-    .dim{
-      display: block;
-      min-width: 100vw;
-      height: 100vh;
-    }
-  }
-  
- /*  portfolio section end */
-
-
- /* social media  start */
-
-.facebook-bg{
-  background:radial-gradient(#004270, #111111);
-  position :relative !important;
-}
-.twitter-bg{
-  background:radial-gradient(#002036, #111111);
-  position :relative !important;
-}
-.linkedin-bg{
-  background:radial-gradient(#122f44, #111111);
-  position :relative !important;
-}
-.insta-bg{
-  background:radial-gradient(#441243, #111111);
-  position :relative !important;
-}
-.behance-bg{
-  background:radial-gradient(#2d1652, #111111);
-  position :relative !important;
-}
-.youtube-bg{
-  background:radial-gradient(#521616, #111111);
-  position :relative !important;
-}
-.whatsapp-bg{
-  background:radial-gradient(#093017, #111111);
-  position :relative !important;
-}
-.github-bg{
-  background:radial-gradient(#353740, #111111);
-  position :relative !important;
-}
-
-.footerSocial{
-font-size: 30vh;
-margin-bottom: -30vh;
-z-index: 0;
-position: relative;
-text-align: center;
-color: #111;
-}
-
-.main-footer{
-  padding-bottom: 20px !important;
-  margin-top:50px ;
-}
-.footer-social a{
-  margin-bottom: 5px;
-}
- /* social media end */
-
-/* phone location mail section start */
-
-
-.conCard {
-  position: relative;
-  flex: 1;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100px;
-}
-
-.icon{
-  font-size: 32px;
-  color: #ddd;
-  transition: .3s linear;
-}
-.font-50{
-  font-size: 45px !important;
-}
-.conCard:hover .icon{
-  transform: scale(4);
-  opacity: 0;
-}
-
-.card-content h3,
-.card-content span{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 16px;
-  opacity: 0;
-}
-
-.card-content h3{
-  top: 20px;
-  text-transform: uppercase;
-  color: #8f8f8f;
-}
-
-.card-content span{
-  bottom: 20px;
-  color: #fff;
-  font-weight: 500;
-}
-
-.conCard:hover h3{
-  opacity: 1;
-  transition: .3s linear .3s;
-}
-
-.conCard:hover span {
-  opacity: 1;
-  transition: .3s linear .3s;
-}
-
-
-@media screen and (max-width:900px){
-  .conCard{
-      flex: 100%;
-  }
-  #contact{
-     margin-top: 120px !important;
-     padding: 30px 0 !important;
-  }
-}
-/* phone location mail section end */
-
-
-/* quote animation start */
-.qoute-animation {
-  letter-spacing: 5px;
-  color: #ddd;
-  position: relative;
-  font-size: 2em;
-}
-/* quote animation end */
 
 
 
@@ -686,37 +348,140 @@ color: #111;
 /* progass bar end */
 
 
+/* mobile portfolio section start*/
+.mobile-fortpolio-link{
+  display: none;
+}
+/* mobile portfolio section end*/
 
 
+.pt-5{
+  padding-top: 3rem;
+}
 
 
+/*************************/
+/*** my media quaries  ***/
+/*************************/
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .innerText-vertical-line, .text, .text-vertiical-line {
+      font-size: 5.5em;
+  }
+  
+  .main-banner-white p {
+      font-size: 1.5em;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      width: 100%;
+  }
+
+  .main-banner-white h2 {
+      font-size: 2em;
+      margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrap .about-desc .bold-text {
+    font-size: 6.5em; 
+  } 
+}
+
+@media (min-width: 768px) {
+    #folio-bg{
+      position: fixed !important;
+      top: 20vh;
+      max-width: 100%;
+      text-align: center;
+    }
+    .horizontal{
+      top: 30vh;
+    }
+    .websie-titles{
+      margin-top: 30%;
+      margin-bottom: 20px;
+    }
+
+    .wrap .about-desc {
+      position: relative; 
+    } 
+  }
 
 
+  @media (max-width: 992px) {
+    .float-sm{
+      display: none !important;
+    }
+    .portfolio-h-section{
+      display: none;
+    }.portfolio-h-section-link{
+      display: none !important;
+    }
+    .mobile-fortpolio{
+      display: block;
+    }
+    .mobile-fortpolio-link{
+      display: block;
+    }
+    .behind-titles-p{
+      padding: 0 !important;
+    }
+    .wrap .about-desc .bold-text {
+      display: none; 
+    }
+  }
 
 
+@media (max-width: 768px) {
+    .about-section .author-img {
+      display: block;
+      height: 300px; } 
+
+    .behind-titles-p{
+      margin-top: 30px;;
+    }
+    .wrap {
+      margin-top: 40px; 
+    }
+    .wrap .about-desc .bold-text {
+      display: none; 
+    }
+  }
+
+  @media (max-width :984px) and (min-width:575px) {
+      .wrap .about-desc .bold-text {
+        position: absolute;
+        top: -90px;
+      margin-top: 10px;
+    }        
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @media only screen and (max-width: 767px){
+    /* main section */
+    .banner-about-down {
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 991px){
+    /* main section */
+    .behind-titles{
+      font-size: 6em;
+    }
+  }
+  @media only screen and (max-width: 575px){
+    /* main section */
+    .behind-titles{
+      font-size: 3em;
+    }
+    .about-us{
+      margin-top: 75vh;
+    }
+  }
+  @media only screen and (max-width: 375px){
+    .about-us{
+      margin-top: 75vh;
+    }
+  }
+  
