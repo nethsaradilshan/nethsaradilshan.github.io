@@ -1773,7 +1773,7 @@ header .navbar.sticky-header{
 		margin-bottom: -20vh !important;
 	}	
 }
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 768px){
 	.footerSocial{
 		display: none;
 	}
