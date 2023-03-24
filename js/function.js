@@ -9,8 +9,8 @@
 	   $(".preloader").fadeOut(600);
 	   $('#folio-bg').hide();
 	   changeAboutBG();
-	   //chnageLogoSliderBG();
-	   sideSocialMedia();  
+	   sideSocialMedia(); 
+	   skillsLoader(); 
     });
 	
 	/* slick nav */
@@ -162,16 +162,6 @@
 		mainClass: 'mfp-fade'
 	});
 	
-	
-	/* Popup video */
-	var $popupvideo = $(".popup-video"); 
-	if($popupvideo.length){
-		$popupvideo.magnificPopup({
-			type: 'iframe',
-			preloader: true,
-		});
-	}
-	
 	/* Init Counter */
     $('.counter').counterUp({ delay: 10, time: 1000 });
 	
@@ -180,7 +170,9 @@
 
 
 
-	// my scripts
+	//
+	// my screipts 
+	//
 
 	/* hide banner text when scroll start*/
 	$(document).ready(function () {
@@ -197,9 +189,7 @@
 		   $(".heading").fadeIn(1000);
 		 }
 	 }
-
 	/* hide banner text when scroll end*/
-
 
 	/*auto line when scrolling start*/
 	let ticking = false;
@@ -274,36 +264,6 @@
 	});
 	/*auto line when scrolling end*/
 
-	
-
-	// var scroll = 0;
-	// var conponent = document.querySelector('.container1');
-	// var windowHeight = window.innerHeight;
-	// document.addEventListener('scroll',()=>{
-		
-	// 	scroll = window.pageYOffset;
-	// 	if(scroll >= 0 && scroll < windowHeight){
-	// 		//to remove all classes sauf .container
-	// 		conponent.setAttribute('class','container1');
-	// 		conponent.classList.add('slide1')
-	// 	}
-	// 	else if(scroll >= 3*windowHeight && scroll < 4*windowHeight){
-	// 		//to remove all classes sauf .container
-	// 		conponent.setAttribute('class','container1');
-	// 		conponent.classList.add('slide2');
-	// 	}
-	// 	else if(scroll >= 4*windowHeight && scroll < 5*windowHeight){
-	// 		//to remove all classes sauf .container
-	// 		conponent.setAttribute('class','container1');
-	// 		conponent.classList.add('slide3');
-	// 	}
-	// 	else if(scroll >= 5*windowHeight && scroll < 6*windowHeight){
-	// 		//to remove all classes sauf .container
-	// 		conponent.setAttribute('class','container1');
-	// 		conponent.classList.add('slide4');
-	// 	}
-	// })
-
 
 	$.fn.isInViewport = function() {
 		var elementTop = $(this).offset().top;
@@ -314,24 +274,6 @@
 	
 		return elementBottom > viewportTop && elementTop < viewportBottom;
 	};
-	// $(window).on('resize scroll', function() {
-	// 	changeBackground();		
-	// });
-
-	// function changeBackground(){
-	// 	if ($('#dynaro').isInViewport()) {
-	// 		conponent.setAttribute('class','container1');
-	// 		conponent.classList.add('slide1');
-	// 	} 
-	// 	if ($('#tma').isInViewport()) {
-	// 		conponent.setAttribute('class','container1');
-	// 		conponent.classList.add('slide2');
-	// 	}
-	// 	if ($('#ccms').isInViewport()) {
-	// 		conponent.setAttribute('class','container1');
-	// 		conponent.classList.add('slide3');
-	// 	}
-	// }
 
 
 //page top background effect	
@@ -345,7 +287,6 @@ window.addEventListener('scroll', function() {
 	$('#folio-bg').hide();
 	changeAboutBG();  
 	viewFortpolioTitle();
-	//chnageLogoSliderBG();
 	sideSocialMedia();
 	skillsLoader();
 })
@@ -380,15 +321,6 @@ function viewFortpolioTitle(){
 	if(($('.horizontal').isInViewport()) || ($('.thisISPortfolio').isInViewport()))
 	$('#folio-bg').show();	
 }
-// function chnageLogoSliderBG(){	
-// 	if($('#contact').isInViewport()){
-// 		$('.brand-sponser').removeClass("darkbackground");
-// 		$('.brand-sponser').addClass("lightbackground");
-// 	}else{
-// 		$('.brand-sponser').removeClass("lightbackground");
-// 		$('.brand-sponser').addClass("darkbackground");
-// 	}	
-// }
 
 //side social media 
 function sideSocialMedia(){	
@@ -527,7 +459,6 @@ function showDiv() {
 		}, 20);
 	}
 }
-
 window.onload = showDiv;
 
 //skills
@@ -546,12 +477,10 @@ function skillsLoader() {
 $(document).on('click','.slicknav_btn',function(){
 		if ( $('#main-navbar').find('.slicknav_collapsed').length) {
 			$('.navbar-expand-md').removeClass('navBackground');
-			$('')
 		} else {
 			$('.navbar-expand-md').addClass('navBackground');
 		}	
 });
 
 
-	
 })(jQuery);
