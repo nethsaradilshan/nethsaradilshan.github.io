@@ -472,6 +472,9 @@
     .behind-titles{
       font-size: 6em;
     }
+	  .contact-info-single{
+		margin-bottom: 20px !important;
+	}
   }
   @media only screen and (max-width: 575px){
     /* main section */
