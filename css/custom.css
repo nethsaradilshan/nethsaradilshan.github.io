@@ -1952,7 +1952,7 @@ header .navbar.sticky-header{
 		font-size: 20px;
 	}
 	.contact-info-single{
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 }
 
