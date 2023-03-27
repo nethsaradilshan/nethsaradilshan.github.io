@@ -1951,6 +1951,9 @@ header .navbar.sticky-header{
 		line-height: 40px;
 		font-size: 20px;
 	}
+	.contact-info-single{
+		margin-bottom: 20px;
+	}
 }
 
 @media only screen and (max-width: 575px){
