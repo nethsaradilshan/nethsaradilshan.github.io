@@ -447,6 +447,9 @@
     .wrap .about-desc .bold-text {
       display: none; 
     }
+	.contact-info-single{
+		margin-bottom: 20px !important;
+	}
   }
 
   @media (max-width :984px) and (min-width:575px) {
