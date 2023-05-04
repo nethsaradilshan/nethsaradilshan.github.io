@@ -317,6 +317,7 @@ function changeAboutBG(){
 		$('.service-single').addClass("service-single-dark");
 	}
 
+	
 }
 
 //fortpolio title show and hide
