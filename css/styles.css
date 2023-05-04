@@ -242,7 +242,7 @@
     right: 0;
     bottom: 0;
     font-weight: 700 !important;
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.15);
     /* text-transform: uppercase;  */
   }
     
@@ -295,34 +295,34 @@
 }
 
 .float-fb {
-  top: 200px;
+  top: 170px;
 }
 
 .float-tw {
-  top: 255px;
+  top: 225px;
 }
 
 .float-gp {
-  top: 310px;
+  top: 280px;
 }
 
 .float-bh {
-  top: 365px;
+  top: 335px;
 }
 
 .float-ig {
-  top: 420px;
+  top: 390px;
 }
 
 .float-gh {
-  top: 475px;
+  top: 445px;
 }
 .float-yt {
-  top: 530px;
+  top: 500px;
 }
 
 .float-wht {
-  top: 585px;
+  top: 555px;
 }
 /* Floating Social Media Bar Style Ends Here */
 
