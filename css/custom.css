@@ -484,7 +484,7 @@ header .navbar.sticky-header{
 }
 .services-bg h1{
 	z-index: -1;
-	color: #efefef !important; 
+	color: #dbdbdb !important; 
 	transition: background-color 0.5s ease-in-out; 
 }
 .service-bg-dark{
