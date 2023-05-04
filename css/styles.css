@@ -470,7 +470,7 @@
   @media only screen and (max-width: 991px){
     /* main section */
     .behind-titles{
-      font-size: 6em;
+      font-size: 5em;
     }
 	  .contact-info-single{
 		margin-bottom: 20px !important;
@@ -491,3 +491,6 @@
     }
   }
   
+::-webkit-scrollbar- {
+            display: none;
+        }
