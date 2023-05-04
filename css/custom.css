@@ -1134,6 +1134,11 @@ header .navbar.sticky-header{
       min-width: 100vw;
       height: 100vh;
     }
+	.body-width{
+		max-width: 93%;
+		margin-left: 3.5%;
+	  }
+	  
   }
   
 .testimonial-header a{
