@@ -8,7 +8,13 @@
 	$window.on( "load", function() {
 	   $(".preloader").fadeOut(600);
 	   $('#folio-bg').hide();
-	   changeAboutBG();
+	   if(window.scrollY<1000)
+		{
+			changeAboutBG_with();
+		} else {
+			changeAboutBG_without();
+		}
+	   //changeAboutBG();
 	   sideSocialMedia(); 
 	   skillsLoader(); 
     });
@@ -281,21 +287,57 @@
 
 //page top background effect	
 
-let section = document.querySelector('section');
+//let section = document.querySelector('section');
 let text = document.querySelector('.text-vertiical-line');
 let innerText = document.querySelector('.innerText-vertical-line');
 let backgroundColor = document.querySelector('.section-vertical-line');
 
 window.addEventListener('scroll', function() {	
 	$('#folio-bg').hide();
-	changeAboutBG();  
+	if(window.scrollY<1000)
+	{
+		changeAboutBG_with();
+	} else {
+		changeAboutBG_without();
+	}  
 	viewFortpolioTitle();
 	sideSocialMedia();
 	skillsLoader();
 })
 //change about bg effect
-function changeAboutBG(){
+function changeAboutBG_with(){
 	let value = window.scrollY;
+	let section = document.querySelector('section');
+    section.style.clipPath = `circle(${value}px at center center)`;
+	if (window.innerWidth < 768) {
+		text.style.left = 100 - value / 3 + `%`;
+		innerText.style.left = 100 - value / 3 + `%`;
+	} else {
+		text.style.left = 100 - value / 5 + `%`;
+		innerText.style.left = 100 - value / 5 + `%`;
+	}
+
+	if (parseFloat(text.style.left) < -90 ){
+		$('#section-vertical-line').addClass("about-us-bg");
+	}else{
+		$('#section-vertical-line').removeClass("about-us-bg");
+	}
+	
+	if ($('.quote-sentence').isInViewport()){
+		showDiv();
+		$('#services').removeClass("services-bg");
+		$('#services').addClass("service-bg-dark");
+		$('.service-single').removeClass("service-single-dark");
+	}else{
+		$('#services').removeClass("service-bg-dark");
+		$('#services').addClass("services-bg");
+		$('.service-single').addClass("service-single-dark");
+	}
+
+}
+function changeAboutBG_without(){
+	let value = window.scrollY;
+	//let section = document.querySelector('section');
     section.style.clipPath = `circle(${value}px at center center)`;
     text.style.left = 100 - value / 5 + `%`;
     innerText.style.left = 100 - value / 5 + `%`;
@@ -317,7 +359,6 @@ function changeAboutBG(){
 		$('.service-single').addClass("service-single-dark");
 	}
 
-	
 }
 
 //fortpolio title show and hide
