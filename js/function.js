@@ -531,10 +531,12 @@ window.onload = function() {
 	viewFortpolioTitle();
   };
   window.onscroll = function() {
-	sideSocialMedia();
-	changeAboutBG_with();
-	skillsLoader(); 
-	viewFortpolioTitle();
+	if (window.innerWidth > 755) {
+		sideSocialMedia();
+		changeAboutBG_with();
+		skillsLoader(); 
+		viewFortpolioTitle();
+	  }
   };
 
 })(jQuery);
