@@ -8,15 +8,13 @@
 	$window.on( "load", function() {
 	   $(".preloader").fadeOut(600);
 	   $('#folio-bg').hide();
-	   if(window.scrollY<1000)
+	   if(window.scrollY<1000  || $('.about-us').isInViewport())
 		{
 			changeAboutBG_with();
 		} else {
 			changeAboutBG_without();
 		}
 	   //changeAboutBG();
-	   sideSocialMedia(); 
-	   skillsLoader(); 
     });
 	
 	/* slick nav */
@@ -294,15 +292,13 @@ let backgroundColor = document.querySelector('.section-vertical-line');
 
 window.addEventListener('scroll', function() {	
 	$('#folio-bg').hide();
-	if(window.scrollY<1000)
+	if(window.scrollY<1000 || $('.about-us').isInViewport())
 	{
 		changeAboutBG_with();
 	} else {
 		changeAboutBG_without();
 	}  
-	viewFortpolioTitle();
-	sideSocialMedia();
-	skillsLoader();
+	
 })
 //change about bg effect
 function changeAboutBG_with(){
@@ -338,7 +334,7 @@ function changeAboutBG_with(){
 function changeAboutBG_without(){
 	let value = window.scrollY;
 	//let section = document.querySelector('section');
-    section.style.clipPath = `circle(${value}px at center center)`;
+    //section.style.clipPath = `circle(${value}px at center center)`;
     text.style.left = 100 - value / 5 + `%`;
     innerText.style.left = 100 - value / 5 + `%`;
 
@@ -363,7 +359,7 @@ function changeAboutBG_without(){
 
 //fortpolio title show and hide
 function viewFortpolioTitle(){	
-	if(($('.horizontal').isInViewport()) || ($('.thisISPortfolio').isInViewport()))
+	if(($('.horizontal').isInViewport()) || ($('.thisISPortfolio').isInViewport()) || ($('#wordlogos').isInViewport()))
 	$('#folio-bg').show();	
 }
 
@@ -375,7 +371,6 @@ function sideSocialMedia(){
 		$('.float-sm').hide();
 	}
 }
-
 
 // Adding scroll event listener
 document.addEventListener('scroll', horizontalScroll);
@@ -528,4 +523,23 @@ $(document).on('click','.slicknav_btn',function(){
 });
 
 
+
+window.onload = function() {
+	sideSocialMedia();
+	changeAboutBG_with();
+	skillsLoader(); 
+	viewFortpolioTitle();
+  };
+  window.onscroll = function() {
+	sideSocialMedia();
+	changeAboutBG_with();
+	skillsLoader(); 
+	viewFortpolioTitle();
+  };
+
 })(jQuery);
+
+
+
+
+
