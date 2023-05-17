@@ -386,6 +386,8 @@
   .wrap .about-desc .bold-text {
     font-size: 6.5em; 
   } 
+  .about-us {
+    margin-top: 50vh;
 }
 
 @media (min-width: 768px) {
@@ -482,12 +484,12 @@
       font-size: 2.5em;
     }
     .about-us{
-      margin-top: 75vh;
+      margin-top: 20vh;
     }
   }
   @media only screen and (max-width: 375px){
     .about-us{
-      margin-top: 75vh;
+      margin-top: 55vh;
     }
   }
   
