@@ -27,6 +27,8 @@
 		} else {
 			$('.navbar').removeClass('sticky-header');
 		}
+		
+		showGototop();
 	});
 	
 	/* Top Menu */
@@ -533,12 +535,22 @@ function magicLine(){
 	}
 }
 
+function showGototop(){
+	if($('.main-footer').isInViewport()){
+		$('.backtotop').show();
+	}
+	else{
+		$('.backtotop').hide();
+	}
+}
+
 window.onload = function() {
 	sideSocialMedia();
 	changeAboutBG_with();
 	skillsLoader(); 
 	viewFortpolioTitle();
 	magicLine();
+	showGototop();
   };
   window.onscroll = function() {
 	if (window.innerWidth > 755) {
@@ -547,6 +559,7 @@ window.onload = function() {
 		skillsLoader(); 
 		viewFortpolioTitle();
 		magicLine();
+		showGototop();
 	  }
   };
 
