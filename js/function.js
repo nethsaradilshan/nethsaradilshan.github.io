@@ -567,7 +567,3 @@ window.onload = function() {
 
 })(jQuery);
 
-
-
-
-
