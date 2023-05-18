@@ -1962,6 +1962,9 @@ header .navbar.sticky-header{
 }
 
 @media only screen and (max-width: 575px){
+	.btnStartJourney{
+		text-align: center;
+	}
 	.mail-locatopm-phone h1{
 		top:-60px !important;
 	  }
