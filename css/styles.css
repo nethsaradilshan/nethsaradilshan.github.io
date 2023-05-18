@@ -559,3 +559,120 @@
   ::-webkit-scrollbar- {
     display: none;
   }
+
+
+
+
+
+
+
+  .backtotop {
+    width: 5rem;
+    height: 5rem;
+  
+    position: fixed;
+    bottom:2rem;
+    right: 1rem;
+  
+    cursor: pointer;
+  
+    transform: rotate(0deg);
+    transform-origin: center center 0;
+    z-index: 1000;
+  
+    transition: all 250ms ease-in-out 0s;
+  
+    &::before {
+      content: "";
+  
+      width: 1.8rem;
+      height: 0.4rem;
+  
+      position: absolute;
+      top: 56%;
+      left: 0.6rem;
+  
+      background-color: currentColor;
+      transform: rotate(-45deg) translateY(-50%);
+      transform-origin: center top 0;
+  
+      transition: all 250ms ease-in-out 0s;
+    }
+  
+    &::after {
+      content: "";
+  
+      width: 2.5rem;
+      height: 0.4rem;
+  
+      position: absolute;
+      top: 50%;
+      right: 0.5rem;
+  
+      background-color: currentColor;
+      transform: rotate(45deg) translateY(-50%);
+      transform-origin: center top 0;
+  
+      transition: all 250ms ease-in-out 0s;
+    }
+  
+    &:hover {
+      transform: rotate(90deg);
+  
+      &::before {
+        width: 30px;
+  
+        top: 30%;
+        left: 10px;
+  
+        background-color: currentColor;
+        transform: rotate(0deg) translateY(-8px);
+      }
+      &::after {
+        width: 30px;
+  
+        top: 60%;
+        right: 10px;
+  
+        background-color: currentColor;
+        transform: rotate(0deg) translateY(8px);
+      }
+  
+      .backtotop__morph {
+        left: 40%;
+        opacity: 1;
+      }
+    }
+  
+    .backtotop__morph {
+      background-color: currentColor;
+  
+      width: 1.5rem;
+      height: 0.4rem;
+  
+      position: absolute;
+      top: 45%;
+      left: 100%;
+  
+      opacity: 0;
+      margin-bottom: -2rem;
+      transform: translate(-50%);
+  
+      transition: all 250ms ease-in-out 0s;
+  
+      &::before {
+        content: "";
+  
+        width: 0;
+        height: 0;
+  
+        position: absolute;
+        top: -0.4rem;
+        left: -0.7rem;
+  
+        border-color: transparent currentColor transparent transparent;
+        border-style: solid;
+        border-width: 0.6rem 1rem 0.6rem 0;
+      }
+    }
+  }
