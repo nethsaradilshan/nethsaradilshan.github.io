@@ -535,6 +535,19 @@
     }
   }
 
+  .footer-magic-line{
+    text-align: end;
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -ms-transform-origin: right top 0;
+    -moz-transform-origin: right top 0;
+    -webkit-transform-origin: left;
+    font-family: "Megrim", cursive;
+    direction: rtl;
+    left: 15px;
+  }
   ::-webkit-scrollbar- {
     display: none;
   }
