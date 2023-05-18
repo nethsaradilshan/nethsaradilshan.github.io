@@ -493,6 +493,10 @@
       top: -90px;
       margin-top: 10px;
     }
+    
+    .about-us {
+      margin-top: 0vh;
+    }
   }
 
 
@@ -515,6 +519,10 @@
     .contact-info-single {
       margin-bottom: 20px !important;
     }
+    
+    .about-us {
+      margin-top: 10vh;
+    }
   }
 
   @media only screen and (max-width: 575px) {
@@ -525,13 +533,13 @@
     }
 
     .about-us {
-      margin-top: 20vh;
+      margin-top: 10vh;
     }
   }
 
   @media only screen and (max-width: 375px) {
     .about-us {
-      margin-top: 55vh;
+      margin-top: 15vh;
     }
   }
 
