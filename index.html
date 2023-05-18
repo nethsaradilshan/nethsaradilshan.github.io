@@ -149,7 +149,7 @@
 						</h2>
 						<p>"Good design is not just about making things look pretty. it's about creating an intuitive
 							and seamless user experience that allows people to achieve their goals effortlessly."</p>
-<!-- 						<a href="#about" class="btn-download">Start Journey</a> -->
+						<a href="#" onclick="smoothScrollToId('about')" class="btn-download">Start Journey</a>
 					</div>
 					<!-- Banner Content End -->
 				</div>
@@ -159,10 +159,10 @@
 	<!-- Banner Slider Section ends -->
 
 	<!-- vertical line start -->
-<div style="padding: 0; margin: 0;" id="verticleLine" class="lineForMobile">
-	<h2 class="text-vertiical-line">Glad you're here...</h2>
+<div style="padding: 0;" id="verticleLine" class="lineForMobile">
+	<h2 class="text-vertiical-line"></h2>
 	<section id="section-vertical-line">
-		<h2 class="innerText-vertical-line">Glad you're here...</h2>
+		<h2 class="innerText-vertical-line"></h2>
 	</section>
 	<div class="main-banner-white"></div>
 </div>	
@@ -170,7 +170,7 @@
 
 	<!-- About us Section Starts -->
 	<section class="about-us" id="about">
-		<div class="container pt-80">
+		<div class="container mt-80">
 			<section class="ftco-section about-section">
 				<div class="container">
 					<div class="row d-flex" data-scrollax-parent="true">
@@ -710,6 +710,18 @@
 	<!-- Main Custom js file -->
 	<script src="js/function.js"></script>
 
+	<script>
+		function smoothScrollToId(id) {
+		var element = document.getElementById(id);
+			if (element) {
+				var offset = element.offsetTop;
+				window.scrollTo({
+				top: offset,
+				behavior: 'smooth'
+				});
+			}
+		}
+			</script>
 
 
 </body>
