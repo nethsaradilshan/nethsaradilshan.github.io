@@ -42,7 +42,9 @@ a:focus{
 	background: #ff9f9b;
 	color: #fff;
 }
-
+.mt-80{
+	margin-top: 100px;
+}
 .preloader{
 	position: fixed;
 	top: 0;
@@ -320,8 +322,8 @@ header .navbar.sticky-header{
 }
 
 .btn-download:hover{
-	border-color: #2185D5;
-	color: #2185D5;
+	border-color: #b9b9b9;
+	color: #b9b9b9;
 }
 
 /**************************************/
