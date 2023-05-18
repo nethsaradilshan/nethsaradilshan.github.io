@@ -639,7 +639,9 @@
 		</div>
 	</div>
 	<!-- Contact Information Section Ends -->
-
+	<a class="backtotop" onclick="goToTop('home')">
+		<spam class="backtotop__morph"></spam>
+	  </a>
 	<!-- Footer Section starts -->
 	<footer class="main-footer logosBG">
 		<h1 class="footerSocial" id="socialMediaType">Social Media</h1>
@@ -714,6 +716,16 @@
 	<script>
 		function smoothScrollToId(id) {
 		var element = document.getElementById(id);
+			if (element) {
+				var offset = element.offsetTop;
+				window.scrollTo({
+				top: offset,
+				behavior: 'smooth'
+				});
+			}
+		}
+		function goToTop(id){
+			var element = document.getElementById(id);
 			if (element) {
 				var offset = element.offsetTop;
 				window.scrollTo({
