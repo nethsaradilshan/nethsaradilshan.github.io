@@ -522,13 +522,23 @@ $(document).on('click','.slicknav_btn',function(){
 		}	
 });
 
-
+//see magic line
+function magicLine(){
+	if((window.innerWidth > 755)){
+		$('.footer-magic-line').show();
+		
+	}
+	else{
+		$('.footer-magic-line').hide();
+	}
+}
 
 window.onload = function() {
 	sideSocialMedia();
 	changeAboutBG_with();
 	skillsLoader(); 
 	viewFortpolioTitle();
+	magicLine();
   };
   window.onscroll = function() {
 	if (window.innerWidth > 755) {
@@ -536,6 +546,7 @@ window.onload = function() {
 		changeAboutBG_with();
 		skillsLoader(); 
 		viewFortpolioTitle();
+		magicLine();
 	  }
   };
 
