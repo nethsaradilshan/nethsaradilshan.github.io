@@ -313,12 +313,7 @@ function changeAboutBG_with(){
 		innerText.style.left = 100 - value / 5 + `%`;
 	}
 
-	// if (parseFloat(text.style.left) < -90 ){
-	// 	$('#section-vertical-line').addClass("about-us-bg");
-	// }else{
-	// 	$('#section-vertical-line').removeClass("about-us-bg");
-	// }
-	if (($('#aboutTextHeader').isInViewport()) || ($('.aboutTextHeaderBG').isInViewport())){
+	if (parseFloat(text.style.left) < -100 ){
 		$('#section-vertical-line').addClass("about-us-bg");
 	}else{
 		$('#section-vertical-line').removeClass("about-us-bg");
@@ -343,17 +338,11 @@ function changeAboutBG_without(){
     text.style.left = 100 - value / 5 + `%`;
     innerText.style.left = 100 - value / 5 + `%`;
 
-		// if (parseFloat(text.style.left) < -90 ){
-	// 	$('#section-vertical-line').addClass("about-us-bg");
-	// }else{
-	// 	$('#section-vertical-line').removeClass("about-us-bg");
-	// }
-	if (($('#aboutTextHeader').isInViewport()) || ($('.aboutTextHeaderBG').isInViewport())){
+	if (parseFloat(text.style.left) < -100 ){
 		$('#section-vertical-line').addClass("about-us-bg");
 	}else{
 		$('#section-vertical-line').removeClass("about-us-bg");
 	}
-	
 	
 	if ($('.quote-sentence').isInViewport()){
 		showDiv();
@@ -560,6 +549,8 @@ window.onload = function() {
 		magicLine();
 	  }
   };
+
+
 
 })(jQuery);
 
