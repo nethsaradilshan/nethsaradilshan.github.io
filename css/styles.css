@@ -676,3 +676,31 @@
       }
     }
   }
+
+
+
+.galleryButton{
+  padding: 15px 25px;
+    background: #111111;
+    color: #686868;
+    border: 2px solid #686868;
+    animation: blinki 3s infinite;
+}
+.galleryButton:hover{
+  background: #d3d3d3;
+  cursor: pointer;
+  color: #111111;
+}
+
+@keyframes blinki {
+  0% {
+    box-shadow: 0 0 1px 10px rgba(255,255,255,0.2);
+  }
+  50% {
+    box-shadow: 0px 0px 1px 0 transparent;
+  }
+  100% {
+    box-shadow: 0 0 1px 10px rgba(255,255,255,0.2);
+
+  }
+}
