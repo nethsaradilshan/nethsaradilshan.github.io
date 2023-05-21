@@ -317,7 +317,7 @@ header .navbar.sticky-header{
 	border: 2px solid #fff;
 	padding: 14px 30px;
 	border-radius: 4px;
-	color: #fff;
+	color: #fff !important;
 	transition: all 0.3s;
 }
 
@@ -1426,7 +1426,7 @@ header .navbar.sticky-header{
 .brand-sponser{
 	padding: 6vh 0;
 	position: relative;
-	margin-top: 50vh;	
+	margin-top: 10vh;	
 	transition: all 1s ease;
 }
 
@@ -2003,4 +2003,22 @@ header .navbar.sticky-header{
 		margin-top: 0;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
